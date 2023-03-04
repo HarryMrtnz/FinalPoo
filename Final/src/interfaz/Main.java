@@ -72,10 +72,8 @@ public class Main {
 		/* G */	listaPaises.add(brazil);	listaPaises.add(serbia);	   listaPaises.add(switzerland); listaPaises.add(cameroon);
 		/* H */	listaPaises.add(portugal);	listaPaises.add(ghana);	 	   listaPaises.add(uruguay);	 listaPaises.add(korea_republic);
 		
-//		System.out.println("...Abriendo pregunta de apuestas.");
-//		menuApostar(listaPaises, a1);
 		System.out.println("...Pidiendo info al encargado.");
-		loginEncargado();
+//		loginEncargado();
 	
 		System.out.println("...Generando partidos de grupo.");
 		LinkedList<Partido> listaPartidos = new LinkedList<Partido>();
@@ -184,7 +182,6 @@ public class Main {
 				listaCuartos.add(pais);
 			}
 		}
-		System.out.println("...Lista de face Cuartos terminada.");
 		Partido.faceCuartos(listaCuartos, listaPartidos);
 		System.out.println("...Lista de face Semifinal terminada.");
 		LinkedList<Pais> listaSemifinal = new LinkedList<Pais>();

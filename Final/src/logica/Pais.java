@@ -1,5 +1,6 @@
 package logica;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Scanner;
 
@@ -118,21 +119,17 @@ public class Pais {
 		this.porPartidoTercerPuesto = porPartidoTercerPuesto;
 	}
 	
-	
-
 	public static void mostrarEquipos(LinkedList<Pais> paises){
 		if(paises.isEmpty()) {
 			JOptionPane.showMessageDialog(null,"Lista vacia pá");
 		
 		}else {
-			//System.out.println("Estos son los "+ paises.size()+" paises que participarán del Mundial Qatar 2022");
-			for (Pais pais : paises) {	
-				//System.out.println("Equipo "+pais.getId()+ " = "+ pais.getNombre() + " | Grupo: " + pais.getGrupo());
-				JOptionPane.showMessageDialog(null,"Estos son los "+ paises.size()+" paises que participarán del Mundial Qatar 2022"
-						+ "\nEquipo "+pais.getId()+ " = "+ pais.getNombre() + " | Grupo: " + pais.getGrupo());
+			for (Pais pais : paises) {
+				
+				JOptionPane.showMessageDialog(null, "Estos son los "+ paises.size()+" paises que participarán del Mundial Qatar 2022"
+						+ "\nEquipo "+pais.getId()+ " = "+ pais.getNombre() + " | Grupo: " + pais.getGrupo() );
 			}
 		}
-		System.out.println(); //Espacio separador
 	}
 	
 	public static void buscarGrupo(LinkedList<Pais> paises) {
@@ -146,18 +143,12 @@ public class Pais {
 		if(paises.isEmpty()) {
 			JOptionPane.showMessageDialog(null,"Lista vacia pá");
 		}else {
-			//System.out.println("\nPaises del grupo elegido:");
 			for (Pais pais : paises) {
 				if(pais.getGrupo().equalsIgnoreCase(grupo)) {
 					JOptionPane.showMessageDialog(null,"Paises del grupo elegido:\n → "+pais.getNombre());
-//				}else {
-//					System.out.println("No se ha encontrado ningun resultado"
-//							+ "\nVuelve a intentar");
-//					buscarGrupo(listaPais);
 				}
 	        }
 		}
-		System.out.println(); //Espacio separador
 	}
 	
 	public static void buscarEquipo(LinkedList<Pais> paises){
@@ -174,7 +165,6 @@ public class Pais {
 				}
 	        }
 		}
-		System.out.println(); //Espacio separador
 	}
 }
 

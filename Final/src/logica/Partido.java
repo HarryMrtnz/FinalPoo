@@ -266,7 +266,6 @@ public class Partido {
 	
 	
 	public static void buscarPartidoGrupo(LinkedList<Partido> partidos, LinkedList <Pais> paises) {
-		//System.out.print("ingrese el grupo para ver los partidos: ");
 		String [] grupos = {"A", "B", "C", "D", "E", "F", "G", "H"};
 		
 		String grupo = (String) JOptionPane.showInputDialog(
