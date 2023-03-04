@@ -73,7 +73,7 @@ public class Main {
 		/* H */	listaPaises.add(portugal);	listaPaises.add(ghana);	 	   listaPaises.add(uruguay);	 listaPaises.add(korea_republic);
 		
 		System.out.println("...Pidiendo info al encargado.");
-//		loginEncargado();
+		loginEncargado();
 	
 		System.out.println("...Generando partidos de grupo.");
 		LinkedList<Partido> listaPartidos = new LinkedList<Partido>();
