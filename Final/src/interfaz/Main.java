@@ -71,7 +71,7 @@ public class Main {
 		/* H */	listaPaises.add(portugal);	listaPaises.add(ghana);	 	   listaPaises.add(uruguay);	 listaPaises.add(korea_republic);
 		
 		System.out.println("...Pidiendo info al encargado.");
-//		loginEncargado();
+		loginEncargado();
 	
 		System.out.println("...Generando partidos de grupo.");
 		LinkedList<Partido> listaPartidos = new LinkedList<Partido>();
@@ -232,11 +232,11 @@ public class Main {
 		///////////////////////////////////////////////////////////////////////////////////
 		///////////////////////////////////////////////////////////////////////////////////
 		
-//		if (menuApostar(listaPaises, a1) ) {
-//			menuConApuesta(listaPaises, listaPartidos, listaOctavos, listaCuartos, listaSemifinal, listaTercerPuesto, listaFinal, tercero, segundo, ganador, a1);
-//		} else {
+		if (menuApostar(listaPaises, a1) ) {
+			menuConApuesta(listaPaises, listaPartidos, listaOctavos, listaCuartos, listaSemifinal, listaTercerPuesto, listaFinal, tercero, segundo, ganador, a1);
+		} else {
 			menuSinApuesta(listaPaises, listaPartidos, listaOctavos, listaCuartos, listaSemifinal, listaTercerPuesto, listaFinal, tercero, segundo, ganador);
-//		}
+		}
 		
 	}
 	
