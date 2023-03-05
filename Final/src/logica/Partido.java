@@ -87,20 +87,20 @@ public class Partido {
 		//Pais que gana suma 3 puntos, pais que pierde no suma puntos, partido empatado ambos suman 1 punto
 		if (gol1 > gol2) {
 			pais1.setPuntos(pais1.getPuntos()+3);
-			this.detalle = "\n Gano " + pais1.getNombre()+"\n"
-					+ " Resultado: "+ pais1.getNombre()+" "+gol1+" | "+ gol2 +" "+ pais2.getNombre()+"\n" 
-					+ "Duracion total de partido: "+this.getDuracion()+" minutos.\n" ;		
+			this.detalle = "\n→ Gano " + pais1.getNombre()+"\n"
+					+ "Resultado: "+ pais1.getNombre()+" "+gol1+" | "+ gol2 +" "+ pais2.getNombre()+"\n" 
+					+ "Duracion total de partido: "+this.getDuracion()+" minutos." ;		
 		} else if(gol1 < gol2){
 			pais2.setPuntos(pais2.getPuntos()+3);
-			this.detalle = "\n Gano " + pais2.getNombre()+"\n"
-					+ " Resultado: "+ pais1.getNombre()+" "+gol1+" | "+ gol2 +" "+ pais2.getNombre()+"\n" 
-					+ "Duracion total de partido: "+this.getDuracion()+" minutos.\n" ;
+			this.detalle = "\n→ Gano " + pais2.getNombre()+"\n"
+					+ "Resultado: "+ pais1.getNombre()+" "+gol1+" | "+ gol2 +" "+ pais2.getNombre()+"\n" 
+					+ "Duracion total de partido: "+this.getDuracion()+" minutos." ;
 		} else {
 			pais1.setPuntos(pais1.getPuntos()+1);
 			pais2.setPuntos(pais2.getPuntos()+1);
-			this.detalle = "\n Partido empatado \n"
-					+ " Resultado: "+ pais1.getNombre()+" "+gol1+" | "+ gol2 +" "+ pais2.getNombre()+"\n" 
-					+ "Duracion total de partido: "+this.getDuracion()+" minutos.\n" ;
+			this.detalle = "\n→ Partido empatado \n"
+					+ "Resultado: "+ pais1.getNombre()+" "+gol1+" | "+ gol2 +" "+ pais2.getNombre()+"\n" 
+					+ "Duracion total de partido: "+this.getDuracion()+" minutos." ;
 		}	
 	}
 	
@@ -119,13 +119,13 @@ public class Partido {
 		//Pais que gana suma 3 puntos, pais que pierde no suma puntos, partido empatado ambos suman 1 punto
 		if (gol1 > gol2) {
 			pais2.setCalificado(false);
-			this.detalle = "\n Gano " + pais1.getNombre()+"\n"
-					+ " Resultado: "+ pais1.getNombre()+" "+gol1+" | "+ gol2 +" "+ pais2.getNombre()+"\n" 
+			this.detalle = "\n→ Gano " + pais1.getNombre()+"\n"
+					+ "Resultado: "+ pais1.getNombre()+" "+gol1+" | "+ gol2 +" "+ pais2.getNombre()+"\n" 
 					+ "Duracion total de partido: "+this.getDuracion()+" minutos." ;	
 		} else if(gol1 < gol2){
 			pais1.setCalificado(false);
-			this.detalle = "\n Gano " + pais2.getNombre()+"\n"
-					+ " Resultado: "+ pais1.getNombre()+" "+gol1+" | "+ gol2 +" "+ pais2.getNombre()+"\n" 
+			this.detalle = "\n→ Gano " + pais2.getNombre()+"\n"
+					+ "Resultado: "+ pais1.getNombre()+" "+gol1+" | "+ gol2 +" "+ pais2.getNombre()+"\n" 
 					+ "Duracion total de partido: "+this.getDuracion()+" minutos." ;
 		} else { //empate
 			int gol3, gol4; //Goles de cada equipo
@@ -138,14 +138,14 @@ public class Partido {
 			pais2.setGoles(pais2.getGoles()+gol4);
 			if (gol3 >= gol4) {
 				pais2.setCalificado(false);
-				this.detalle = "\n Partido empatado.\n Definicion por penales.\n Gano " + pais1.getNombre()+"\n"
-						+ " Resultado: "+ pais1.getNombre()+" "+ gol1+" ("+gol3+") | ("+ gol4 +") "+gol2+" "+ pais2.getNombre()+"\n" 
-						+ "Duracion total de partido: "+this.getDuracion()+" minutos.\n" ;	
+				this.detalle = "\n→ Partido empatado.\n Definicion por penales.\n Gano " + pais1.getNombre()+"\n"
+						+ "Resultado: "+ pais1.getNombre()+" "+ gol1+" ("+gol3+") | ("+ gol4 +") "+gol2+" "+ pais2.getNombre()+"\n" 
+						+ "Duracion total de partido: "+this.getDuracion()+" minutos." ;	
 			} else {
 				pais1.setCalificado(false);
-				this.detalle = "\n Partido empatado.\n Definicion por penales.\n Gano " + pais2.getNombre()+"\n"
-						+ " Resultado: "+ pais1.getNombre()+" "+ gol1+" ("+gol3+") | ("+ gol4 +") "+gol2+" "+ pais2.getNombre()+"\n" 
-						+ "Duracion total de partido: "+this.getDuracion()+" minutos.\n" ;
+				this.detalle = "\n→ Partido empatado.\n Definicion por penales.\n Gano " + pais2.getNombre()+"\n"
+						+ "Resultado: "+ pais1.getNombre()+" "+ gol1+" ("+gol3+") | ("+ gol4 +") "+gol2+" "+ pais2.getNombre()+"\n" 
+						+ "Duracion total de partido: "+this.getDuracion()+" minutos." ;
 			} 
 		}
 	}
@@ -165,13 +165,13 @@ public class Partido {
 		//Pais que gana suma 3 puntos, pais que pierde no suma puntos, partido empatado ambos suman 1 punto
 		if (gol1 > gol2) {
 			pais1.setPorPartidoTercerPuesto("Gano");
-			this.detalle = "\n Gano " + pais1.getNombre()+"\n"
-					+ " Resultado: "+ pais1.getNombre()+" "+gol1+" | "+ gol2 +" "+ pais2.getNombre()+"\n" 
+			this.detalle = "\n→ Gano " + pais1.getNombre()+"\n"
+					+ "Resultado: "+ pais1.getNombre()+" "+gol1+" | "+ gol2 +" "+ pais2.getNombre()+"\n" 
 					+ "Duracion total de partido: "+this.getDuracion()+" minutos." ;	
 		} else if(gol1 < gol2){
 			pais2.setPorPartidoTercerPuesto("Gano");
-			this.detalle = "\n Gano " + pais2.getNombre()+"\n"
-					+ " Resultado: "+ pais1.getNombre()+" "+gol1+" | "+ gol2 +" "+ pais2.getNombre()+"\n" 
+			this.detalle = "\n→ Gano " + pais2.getNombre()+"\n"
+					+ "Resultado: "+ pais1.getNombre()+" "+gol1+" | "+ gol2 +" "+ pais2.getNombre()+"\n" 
 					+ "Duracion total de partido: "+this.getDuracion()+" minutos." ;
 		} else { //empate
 			int gol3, gol4; //Goles de cada equipo
@@ -184,14 +184,14 @@ public class Partido {
 			pais2.setGoles(pais2.getGoles()+gol4);
 			if (gol3 >= gol4) {
 				pais1.setPorPartidoTercerPuesto("Gano");
-				this.detalle = "\n Partido empatado.\n Definicion por penales.\n Gano " + pais1.getNombre()+"\n"
-						+ " Resultado: "+ pais1.getNombre()+" "+ gol1+" ("+gol3+") | ("+ gol4 +") "+gol2+" "+ pais2.getNombre()+"\n" 
-						+ "Duracion total de partido: "+this.getDuracion()+" minutos.\n" ;	
+				this.detalle = "\n→ Partido empatado.\n Definicion por penales.\n Gano " + pais1.getNombre()+"\n"
+						+ "Resultado: "+ pais1.getNombre()+" "+ gol1+" ("+gol3+") | ("+ gol4 +") "+gol2+" "+ pais2.getNombre()+"\n" 
+						+ "Duracion total de partido: "+this.getDuracion()+" minutos." ;	
 			} else {
 				pais2.setPorPartidoTercerPuesto("Gano");
-				this.detalle = "\n Partido empatado.\n Definicion por penales.\n Gano " + pais2.getNombre()+"\n"
-						+ " Resultado: "+ pais1.getNombre()+" "+ gol1+" ("+gol3+") | ("+ gol4 +") "+gol2+" "+ pais2.getNombre()+"\n" 
-						+ "Duracion total de partido: "+this.getDuracion()+" minutos.\n" ;
+				this.detalle = "\n→ Partido empatado.\n Definicion por penales.\n Gano " + pais2.getNombre()+"\n"
+						+ "Resultado: "+ pais1.getNombre()+" "+ gol1+" ("+gol3+") | ("+ gol4 +") "+gol2+" "+ pais2.getNombre()+"\n" 
+						+ "Duracion total de partido: "+this.getDuracion()+" minutos." ;
 			} 
 		}
 	}
@@ -266,6 +266,8 @@ public class Partido {
 	
 	
 	public static void buscarPartidoGrupo(LinkedList<Partido> partidos, LinkedList <Pais> paises) {
+		int i = 0;
+		String [] lista = new String [6];
 		String [] grupos = {"A", "B", "C", "D", "E", "F", "G", "H"};
 		
 		String grupo = (String) JOptionPane.showInputDialog(
@@ -275,16 +277,24 @@ public class Partido {
 		for	(Partido partido : partidos) {
 			if (partido.getPais1().getGrupo()== grupo && partido.getId() <=48){
 				
-				JOptionPane.showMessageDialog(null
-				,partido.getNombre()+ partido.getDetalle());
+				lista [i]= partido.getNombre()+ partido.getDetalle();
+				i++;
 			}
 		}
+		JOptionPane.showMessageDialog(null, lista[0]+"\n"
+				+ "________________________________\n"+lista[1]+"\n"
+				+ "________________________________\n"+lista[2]+"\n"
+				+ "________________________________\n"+lista[3]+"\n"
+				+ "________________________________\n"+lista[4]+"\n"
+				+ "________________________________\n"+lista[5]);
 	}
 	
 	public static void clasificadosGrupo(LinkedList<Pais> paises, LinkedList<Partido> partidos, LinkedList<Pais> octavos, 
 	LinkedList<Pais> cuartos, LinkedList<Pais> semifinal, LinkedList<Pais> tercerPuesto, LinkedList<Pais> listaFinal,
 	LinkedList<Pais> tercero, LinkedList<Pais> segundo, LinkedList<Pais> ganador) {
 
+		int i = 0;
+		String [] lista = new String [4];
 		String [] grupos = {"A", "B", "C", "D", "E", "F", "G", "H"};
 		
 		String grupo = (String) JOptionPane.showInputDialog(
@@ -297,26 +307,38 @@ public class Partido {
 		}else {
 			for (Pais pais : paises) {
 				if(pais.getGrupo().equalsIgnoreCase(grupo)) {
-					JOptionPane.showMessageDialog (null
-							,pais.getNombre()+" clasifico en puesto N°: "+pais.getPuestoGrupo()
+					lista [i]=pais.getNombre()+" clasifico en puesto N°: "+pais.getPuestoGrupo()
 							+ "\nEn el grupo "+pais.getGrupo()
-							+ "\nPuntos totales: "+pais.getPuntos()+" puntos.\n");			
+							+ "\nPuntos totales: "+pais.getPuntos()+" puntos.";
+					i++;
 				}
 			}
 		}
+		JOptionPane.showMessageDialog(null, lista[0]+"\n"
+				+ "________________________________\n"+lista[1]+"\n"
+				+ "________________________________\n"+lista[2]+"\n"
+				+ "________________________________\n"+lista[3]+"\n");
 	}
 
 	public static void listaOctavos(LinkedList<Pais> octavos) {
+		int i = 0;
+		String [] lista = new String [16];
+
 		if(octavos.isEmpty()) {
 			JOptionPane.showMessageDialog(null,"Lista vacia pá");
 		
 		}else {
 			for (Pais pais : octavos) {
-				JOptionPane.showMessageDialog(null, "Estos son los "+octavos.size()+" equipos que"
-					+ "\nparticiparán de la face de Octavos:"	
-					+ "\nEquipo "+pais.getId()+ " = "+ pais.getNombre() + " | Grupo: " + pais.getGrupo());
+					lista [i]= "Equipo "+pais.getId()+ " = "+ pais.getNombre() + " | Grupo: " + pais.getGrupo();
+					i++;
 			}
 		}
+		JOptionPane.showMessageDialog(null, "Estos son los "+octavos.size()+" equipos que"
+				+ "\nparticiparán de la face de Octavos:\n"
+				+ "\n"+ lista[0]+"\n"+ lista[1]+"\n"+ lista[2]+"\n"+ lista[3]
+				+ "\n"+ lista[4]+"\n"+ lista[5]+"\n"+ lista[6]+"\n"+ lista[7]
+				+ "\n"+ lista[8]+"\n"+ lista[9]+"\n"+ lista[10]+"\n"+ lista[11]
+				+ "\n"+ lista[12]+"\n"+ lista[13]+"\n"+ lista[14]+"\n"+ lista[15]);	
 	}
 	
 	public static void faceOctavos(LinkedList<Pais> octavos, LinkedList<Partido> listaPartidos) {
@@ -428,16 +450,22 @@ public class Partido {
 	}
 	
 	public static void listaCuartos(LinkedList<Pais> cuartos) {
+		int i = 0;
+		String [] lista = new String [8];
+		
 		if(cuartos.isEmpty()) {
 			JOptionPane.showMessageDialog(null,"Lista vacia pá");
 		
 		}else {
 			for (Pais pais : cuartos) {	
-				JOptionPane.showMessageDialog(null, "Estos son los "+cuartos.size()+" equipos que\n"
-						+ "participarán de la face de Cuartos:"
-						+ "\nEquipo "+pais.getId()+ " = "+ pais.getNombre() + " | Grupo: " + pais.getGrupo());
+				lista[i] = "Equipo "+pais.getId()+ " = "+ pais.getNombre() + " | Grupo: " + pais.getGrupo();
+				i++;
 			}
 		}
+		JOptionPane.showMessageDialog(null, "Estos son los "+cuartos.size()+" equipos que"
+				+ "\nparticiparán de la face de Cuartos:\n"
+				+ "\n"+ lista[0]+"\n"+ lista[1]+"\n"+ lista[2]+"\n"+ lista[3]
+				+ "\n"+ lista[4]+"\n"+ lista[5]+"\n"+ lista[6]+"\n"+ lista[7]);
 	}
 	
 	public static void faceCuartos(LinkedList<Pais> cuartos, LinkedList<Partido> listaPartidos) {
@@ -495,17 +523,22 @@ public class Partido {
 	}
 	
 	public static void listaSemifinal(LinkedList<Pais> semifinal) {
+		int i = 0;
+		String [] lista = new String [8];
+		
 		if(semifinal.isEmpty()) {
 			JOptionPane.showMessageDialog(null,"Lista vacia pá");
 		
 		}else {
 			System.out.println("\n");
 			for (Pais pais : semifinal) {	
-				JOptionPane.showMessageDialog(null, "Estos son los "+semifinal.size()+" equipos que"
-						+ "\nparticiparán de la face de Cuartos:"
-						+ "\nEquipo "+pais.getId()+ " = "+ pais.getNombre() + " | Grupo: " + pais.getGrupo());
+				lista[i] = "Equipo "+pais.getId()+ " = "+ pais.getNombre() + " | Grupo: " + pais.getGrupo();
+				i++;
 			}
 		}
+		JOptionPane.showMessageDialog(null, "Estos son los "+semifinal.size()+" equipos que"
+				+ "\nparticiparán de la face Semifinal:\n"
+				+ lista[0]+"\n"+ lista[1]+"\n"+ lista[2]+"\n"+ lista[3]);
 	}
 	
 	public static void faceSemifinal(LinkedList<Pais> semifinal, LinkedList<Partido> listaPartidos) {
@@ -546,16 +579,21 @@ public class Partido {
 	}
 	
 	public static void listaTercerPuesto(LinkedList<Pais> tercerPuesto) {
+		int i = 0;
+		String [] lista = new String [2];
+		
 		if(tercerPuesto.isEmpty()) {
 			JOptionPane.showMessageDialog(null,"Lista vacia pá");
 		
 		}else {
 			for (Pais pais : tercerPuesto) {	
-				JOptionPane.showMessageDialog(null,"Estos son los "+tercerPuesto.size()+" equipos que\n"
-						+ "participarán por el Tercer Puesto:"
-						+ "\nEquipo "+pais.getId()+ " = "+ pais.getNombre() + " | Grupo: " + pais.getGrupo());
+						lista [i]= "\nEquipo "+pais.getId()+ " = "+ pais.getNombre() + " | Grupo: " + pais.getGrupo();
+						i++;
 			}
 		}
+		JOptionPane.showMessageDialog(null, "Estos son los "+tercerPuesto.size()+" equipos que"
+				+ "\nparticiparán por el tercer puesto:\n"
+				+ lista[0]+"\n"+ lista[1]);
 	}
 	
 	public static void faceTercerPuesto(LinkedList<Pais> tercerPuesto, LinkedList<Partido> listaPartidos) {
@@ -576,16 +614,20 @@ public class Partido {
 	}
 	
 	public static void listaFinal (LinkedList<Pais> listafinal) {
+		int i = 0;
+		String [] lista = new String [2];
 		if(listafinal.isEmpty()) {
 			JOptionPane.showMessageDialog(null,"Lista vacia pá");
 		
 		}else {
-			for (Pais pais : listafinal) {	
-				JOptionPane.showMessageDialog(null,"Estos son los "+listafinal.size()+" equipos que\n"
-						+ "Juegan la Gran Final:"
-						+ "\nEquipo "+pais.getId()+ " = "+ pais.getNombre() + " | Grupo: " + pais.getGrupo());
+			for (Pais pais : listafinal) {
+				lista [i]= "\nEquipo "+pais.getId()+ " = "+ pais.getNombre() + " | Grupo: " + pais.getGrupo();
+				i++;
 			}
 		}
+		JOptionPane.showMessageDialog(null, "Estos son los "+listafinal.size()+" equipos que"
+				+ "Juegan la Gran Final:\n"
+				+ lista[0]+"\n"+ lista[1]);
 	}
 	
 	public static void faceFinal(LinkedList<Pais> listaFinal, LinkedList<Partido> listaPartidos) {
@@ -606,60 +648,93 @@ public class Partido {
 	}
 	
 	public static void verPodio (LinkedList<Pais> tercero, LinkedList<Pais> segundo, LinkedList<Pais> primero) {
-
+		
 		for (Pais pais3 : tercero ) {
-			JOptionPane.showMessageDialog(null,"Tercer Puesto de Mundial QATAR 2022:\n"
-					+ "  Equipo "+pais3.getId()+ " = "+ pais3.getNombre() + " | Grupo: " + pais3.getGrupo()
-					+"\n  Goles totales realizados: "+pais3.getGoles()+"\n");
-		}
-		for (Pais pais2 : segundo) {
-			JOptionPane.showMessageDialog(null,"Segundo Puesto de Mundial QATAR 2022:\n"
-					+ "  Equipo "+pais2.getId()+ " = "+ pais2.getNombre() + " | Grupo: " + pais2.getGrupo()
-					+"\n  Goles totales realizados: "+pais2.getGoles()+"\n");
-		}
-		for (Pais pais1 : primero) {	
-			JOptionPane.showMessageDialog(null,"El Gran ganador Mundial QATAR 2022:\n"
-					+ "  Equipo "+pais1.getId()+ " = "+ pais1.getNombre() + " | Grupo: " + pais1.getGrupo()
-					+"\n  Goles totales realizados: "+pais1.getGoles()+"\n"
-							+ "  "+pais1.getNombre()+" CAMPEON MUNDIAL QATAR 2022");
+
+			for (Pais pais2 : segundo) {
+			
+				for (Pais pais1 : primero) {
+						
+					JOptionPane.showMessageDialog(null,
+					  "Tercer Puesto de Mundial QATAR 2022:\n"
+					+ "→ Equipo "+pais3.getId()+ " = "+ pais3.getNombre() + " | Grupo: " + pais3.getGrupo()
+					+ "\nGoles totales realizados: "+pais3.getGoles()
+					+ "\n___________________________________\n"
+							
+					+ "Segundo Puesto de Mundial QATAR 2022:\n"
+					+ "→ Equipo "+pais2.getId()+ " = "+ pais2.getNombre() + " | Grupo: " + pais2.getGrupo()
+					+ "\nGoles totales realizados: "+pais2.getGoles()
+					+ "\n___________________________________\n"
+					
+					+ "El Gran ganador Mundial QATAR 2022:\n"
+					+ "→ Equipo "+pais1.getId()+ " = "+ pais1.getNombre() + " | Grupo: " + pais1.getGrupo()
+					+ "\nGoles totales realizados: "+pais1.getGoles()
+					+ "\n"+pais1.getNombre()+" CAMPEON MUNDIAL QATAR 2022");
+				}
+			}
 		}
 	}
 
 	public static void verPartidosOctavos (LinkedList<Partido> partidos) {
+		int i = 0;
+		String [] lista = new String [8];
+		
 		if(partidos.isEmpty()) {
 			JOptionPane.showMessageDialog(null,"Lista vacia pá");
 		}else {
 			for (Partido partido : partidos) {
 				if (partido.getId()==49 || partido.getId()==50 || partido.getId()==51 || partido.getId()==52|| partido.getId()==53|| partido.getId()==54||
 						partido.getId()==55|| partido.getId()==56  ) {
-					JOptionPane.showMessageDialog(null, partido.getNombre()+ partido.getDetalle());
+					lista [i]= partido.getNombre()+ partido.getDetalle();
+					i++;
 				}
 			}
 		}
+			JOptionPane.showMessageDialog(null, lista[0]+"\n"
+				+ "________________________________\n"+lista[1]+"\n"
+				+ "________________________________\n"+lista[2]+"\n"
+				+ "________________________________\n"+lista[3]+"\n"
+				+ "________________________________\n"+lista[4]+"\n"
+				+ "________________________________\n"+lista[5]+"\n"
+				+ "________________________________\n"+lista[6]+"\n"
+				+ "________________________________\n"+lista[7]);
 	}
 	
 	public static void verPartidosCuartos(LinkedList<Partido> partidos) {
+		int i = 0;
+		String [] lista = new String [4];
 		if(partidos.isEmpty()) {
 						JOptionPane.showMessageDialog(null,"Lista vacia pá");
 		}else {
 			for (Partido partido : partidos) {
 				if (partido.getId()==57 || partido.getId()==58 || partido.getId()==59 || partido.getId()==60){
-					JOptionPane.showMessageDialog(null,partido.getNombre()+ partido.getDetalle());
+					lista [i]= partido.getNombre()+ partido.getDetalle();
+					i++;
 				}
 			}
 		}
+			JOptionPane.showMessageDialog(null, lista[0]+"\n"
+				+ "________________________________\n"+lista[1]+"\n"
+				+ "________________________________\n"+lista[2]+"\n"
+				+ "________________________________\n"+lista[3]);
 	}
 
 	public static void verPartidosSemifinales(LinkedList<Partido> partidos) {
+		int i = 0;
+		String [] lista = new String [2];
+		
 		if(partidos.isEmpty()) {
 			JOptionPane.showMessageDialog(null,"Lista vacia pá");
 		}else {
 			for (Partido partido : partidos) {
 				if (partido.getId()==61 || partido.getId()==62 ){
-					JOptionPane.showMessageDialog(null,partido.getNombre()+ partido.getDetalle());
+					lista [i]= partido.getNombre()+ partido.getDetalle();
+					i++;
 				}
 			}
 		}
+		JOptionPane.showMessageDialog(null, lista[0]+"\n"
+				+ "________________________________\n"+lista[1]);
 	}
 	
 	public static void verPartidoTercerPuesto (LinkedList<Partido> partidos) {
@@ -686,19 +761,46 @@ public class Partido {
 		}
 	}
 
-	public static void BuscarPartidoEquipos(LinkedList<Partido> partidos) {
+	public static void BuscarPartidoEquipos(LinkedList<Partido> partidos, LinkedList<Pais> listaPaises) {
+		int i = 0; 
+		String [] equipos = new String[listaPaises.size()];
+		String [] lista = new String[8];
 		
-		String nombrePais = JOptionPane.showInputDialog(null, "Escriba el pais para ver sus partidos: ");
+		for (Pais pais : listaPaises) {
+			equipos [listaPaises.indexOf(pais)]= pais.getNombre();
+		}
+			String nombrePais = (String) JOptionPane.showInputDialog(null
+			,"Elija el pais para ver sus partidos: "
+			,"Equipos" // Titulo de la ventana
+			,JOptionPane.QUESTION_MESSAGE // Icono
+			,null //null para icono defecto de la ventana
+			,equipos// el objeto
+			,equipos[0] // posicion del que va aparecer seleccionado
+			);
 		
 		for(Partido partido: partidos){
-		    if(partido.getPais1().getNombre().equalsIgnoreCase(nombrePais) || partido.getPais2().getNombre().equalsIgnoreCase(nombrePais)) {
-		    	
-		    	JOptionPane.showMessageDialog(null,partido.getNombre()+"\n"+partido.getDetalle());
+		    if(partido.getPais1().getNombre().equals(nombrePais) || partido.getPais2().getNombre().equals(nombrePais)) {
+		    	lista [i] = partido.getNombre()+ partido.getDetalle();
+		    	i++;
 		    }
 		}
-	}
+		JOptionPane.showMessageDialog(null
+				,"PARTIDOS DE FASE DE GRUPO:\n" 
+				+ lista[0]+"\n____________________________________\n"
+				+ lista[1]+"\n____________________________________\n"
+				+ lista[2]+"\n____________________________________\n"
+				+"PARTIDO FASE OCTAVOS:\n"
+				+ lista[3]+"\n____________________________________\n"
+				+"PARTIDO FASE CUARTOS:\n"
+				+ lista[4]+"\n____________________________________\n"
+				+"PARTIDO SEMIFINAL:\n"
+				+ lista[5]+"\n____________________________________\n"
+				+"ULTIMO PARTIDO JUGADO:\n"
+				+ lista[6]+"\n____________________________________");
 
-	
+	}                    
+                         
+	                     
 	
 	
 	
