@@ -13,9 +13,10 @@ public class Main {
 	public static void main(String[] args) {
 		
 		System.out.println(" - PROGRAMACION ORIENTADA A OBJETOS - FINAL"
-				+ "\n	  - MUNDIAL QATAR 2022 -"
-				+ "\n__________________________________________\n");
-		
+						  + "\n 	- ALUMNO: Martinez Gabriel -"
+						  + "\n     	   - MUNDIAL QATAR 2022 -"
+						  + "\n__________________________________________\n");
+		portada();
 		Apostador a1 = new Apostador ();
 		
 		System.out.println("...Añadiendo paises que participaran del Mundial.");
@@ -297,7 +298,7 @@ public class Main {
 
 		Encargado e1 = new Encargado ("11222333", "Gamaliel Natanael", "Quiroz", "Pikachu", "asd123");
 		
-		if (e1.Ingreso(usu, pass)) {
+		if (e1.ingreso(usu, pass)) {
 			JOptionPane.showMessageDialog(null, "Sesion iniciada correctamente!"
 					+ "\n Bienvenido Encargado "+e1.getNombre()+" "+e1.getApellido()
 					+ "\n\nAl aceptar comenzará el Mundial 2022");
@@ -434,6 +435,40 @@ public class Main {
 			menuMundial(listaPaises, listaPartidos, listaOctavos, listaCuartos, listaSemifinal, listaTercerPuesto, listaFinal, tercero, segundo, ganador);
 			break;
 		}
+	}
+	
+	public static void portada () {
+		JOptionPane.showMessageDialog(null
+				, "- PROGRAMACION ORIENTADA A OBJETOS -\n"
+				+ "⣿⣿⣿ - ALUMNO: MARTINEZ GABRIEL - ⣿⣿⣿\n"
+				+ "⣿⣿⣿⣿⣿⣿ - MUNDIAL QATAR 2022 - ⣿⣿⣿⣿⣿⣿\n"
+				+ "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿ - FINAL - ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n"
+				+ "\n"
+				+ "⠀⠀⠀⠀⣠⡤⠒⠂⢀⣈⣉⠉⠑⠒⠢⠤⡀⠀⠀⠀⠀⠀⠀⠀\r\n"
+				+ "⠀⠀⡰⠉⢁⣰⣶⣾⣿⣿⣿⣿⣷⣶⣼⣶⣼⣆⠀⠀⠀⠀⠀⠀\r\n"
+				+ "⠀⢠⣁⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⡀⠀⠀⠀\r\n"
+				+ "⠀⣿⣿⣿⣿⣿⠛⠛⠛⠉⠉⠁⠀⠈⠉⠉⠙⠻⣿⣿⣷⣿⡄⠀⠀\r\n"
+				+ "⠀⣿⣿⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⣷⣿⢱⠀⠀\r\n"
+				+ "⠀⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⣟⠂⡇⠀\r\n"
+				+ "⠀⣿⣿⠀⢀⣤⣶⣶⣦⠀⠀⢠⣴⣿⣷⣶⡄⠀⠘⢿⣿⣧⡇⠀\r\n"
+				+ "⢸⣿⡏⠀⠠⡶⢽⡶⠿⠃⠀⠘⢿⠿⠶⠟⠿⠂⠀⢸⣿⣿⡿⡀\r\n"
+				+ "⡜⢿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠟⠋⠀⡇\r\n"
+				+ "⢱⠈⠙⠀⠀⠀⠀⣠⢠⣤⣤⣤⣤⣤⡤⡀⠀⠀⠀⠀⠀⣤⠀⢰\r\n"
+				+ "⢸⠀⢢⡄⠀⠀⠴⣧⣴⡶⢿⢿⣿⣿⣿⣾⣦⠀⡀⢠⣆⠀⠙⠸\r\n"
+				+ "⢠⠀⠈⣷⣀⡀⠨⣿⢿⢋⣉⣉⣉⣙⡿⣿⡿⣠⣟⣾⡿⣤⡠⠂\r\n"
+				+ "⠘⠦⠤⣿⣿⣷⣼⣿⠀⠉⠉⠉⠉⠉⠀⢸⣿⣿⣿⣿⣿⠁⠀⠀\r\n"
+				+ "⠀⠀⠀⢸⢻⣿⣿⣿⣶⡀⠾⣦⣷⠔⢧⣾⣿⣿⣿⣿⢸⠀⠀⠀\r\n"
+				+ "⠀⠀⢀⣾⠀⠉⣿⣿⣿⣧⣦⣻⣳⣶⣿⣿⣿⣾⣿⡿⢸⠀⠀⠀\r\n"
+				+ "⠀⢀⣿⣿⡀⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁⢸⣧⠀⠀\r\n"
+				+ "⠀⢸⣿⣿⣇⠀⠈⠿⢿⣿⣿⣿⣿⣿⣿⣿⠿⠛⠀⠀⣿⣿⡆⠀\r\n"
+				+ "⠀⠈⢿⣿⣿⡄⠀⠀⠀⠉⠛⠛⠛⠛⠉⠁⠀⠀⠀⠀⣿⣿⣇⠀\r\n"
+				+ "⠀⠀⢸⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⠀\r\n"
+				+ "⠀⠀⠀⣿⣿⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣿⣿⣿⡇⠀\r\n"
+				+ "⠀⠀⠀⠘⢿⣿⣿⣿⣧⡀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⠟⠁⠀\r\n"
+				+ "⠀⠀⠀⠀⠀⠙⠿⢿⣿⣿⣶⣄⡀⠀⠀⠀⠀⣰⣿⣿⠋⠀⠀⠀\r\n"
+				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣿⣿⣦⠀⠀⠀⣿⣿⠃⠀⠀⠀⠀\r\n"
+				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣿⣿⣷⣤⣺⣿⡇⠀⠀⠀⠀⠀\r\n"
+				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠿⣿⠿⠋⠀⠀⠀⠀⠀⠀");
 	}
 	
 	

@@ -66,11 +66,11 @@ public class Encargado {
 	}
 	
 
-	public boolean Ingreso(String usuario, String contraseña) {
+	public boolean ingreso(String usuario, String contraseña) {
 			
 		if (usuario.equals(this.usuario)) { //usuario = Pikachu
 			if (contraseña.equals(this.contraseña)) { //contraseña = asd123
-				System.out.println("...Encargado "+this.nombre+" ingreso correctamente");
+				System.out.println("...Encargado "+this.apellido+" ingreso correctamente");
 				return true;
 			}else {
 				return false;
@@ -78,7 +78,6 @@ public class Encargado {
 		}else {
 			return false;
 		}
-
 	}
 	
 	
